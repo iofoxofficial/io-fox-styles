@@ -1,0 +1,15 @@
+{
+  "name": "io-fox-styles",
+  "version": "1.0.0",
+  "description": "Shared design system for IO FOX web projects",
+  "main": "index.css",
+  "style": "index.css",
+  "files": [
+    "index.css"
+  ],
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/orbitron": "^5.2.8"
+  }
+}
