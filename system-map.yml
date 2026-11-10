@@ -1,0 +1,29 @@
+# system-map.yml: notes for IO Fox's System Map. Format: NotesFile (version 1).
+# This repo is public: keep this file to what the repo itself shows.
+version: 1
+name: io-fox-styles
+summary: >-
+  Shared CSS for IO Fox web projects: brand colours (yellow, magenta, cyan on dark surfaces),
+  fonts (Orbitron, Inter, JetBrains Mono, self-hosted through Fontsource) and spacing tokens,
+  as CSS custom properties in one file. IO Fox's web apps install it straight from GitHub as
+  an npm dependency.
+lane: platform
+status: live
+links:
+  - label: index.css
+    path: index.css
+    kind: code
+stack:
+  - choice: One CSS file of custom properties
+    role: Shared brand tokens
+    why: >-
+      Reason not recorded. What the repo shows: plain CSS variables that any project can
+      import, with or without a UI framework, so every app shares one palette and type scale.
+    tradeoffs: Installed from GitHub without version tags, so every consumer gets the latest main when it reinstalls.
+  - choice: Fontsource
+    role: Fonts
+    why: Reason not recorded. The fonts are npm packages bundled with each app, so no app loads fonts from a third-party CDN at run time.
+    links:
+      - label: Fontsource
+        url: "https://fontsource.org"
+        kind: docs
